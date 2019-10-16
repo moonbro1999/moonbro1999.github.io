@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>文章3</title>
+    <url>/2019/10/16/%E6%96%87%E7%AB%A03/</url>
+    <content><![CDATA[<p><img src="/moonbro1999/moonbro1999.github.io/timg.jpg" alt="图例"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>文章2</title>
+    <url>/2019/10/16/%E6%96%87%E7%AB%A02/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>C语言运算符中箭头的含义</title>
+    <url>/2019/10/16/%E6%96%87%E7%AB%A01/</url>
+    <content><![CDATA[<p>-&gt;在C语言中，叫做指向结构体成员运算符，用处是使用一个指向结构体或对象的指针访问其内成员。</p>
+<p>一个指针当用来指向一个结构体、对象时，称之为结构体指针或对象指针。结构体指针或对象指针中的值是所指向的结构体或对象的首地址。通过结构体指针或对象指针即可访问该结构体或对象。</p>
+<p>指向结构体成员运算符需要用到结构体关键字struct和C++类关键字class。结构体指针和对象指针定义的形式如下：</p>
+<p>1、struct 结构体类型名 *指针名；</p>
+<p>2、struct 结构体类型名 *指针名 = &amp;一个结构体的名字。</p>
+<p><img src="/moonbro1999/moonbro1999.github.io/%E7%AE%AD%E5%A4%B4.png" alt="图例"></p>
+<p>扩展资料：<br>C语言中访问结构体成员时 点 . 和 箭头 -&gt; 的区别</p>
+<p>点（.）是用于结构体变量访问成员，箭头（-&gt;）是用于结构体指针访问成员。</p>
+<p>相同点：两个都是二元操作符，其右操作符是成员的名称。</p>
+<p>不同点：点操作符左边的操作数是一个“结果为结构”的表达式； 箭头操作符左边的操作数是一个指向结构的指针。</p>
+]]></content>
+      <categories>
+        <category>-c</category>
+      </categories>
+      <tags>
+        <tag>-c</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你好呀</title>
+    <url>/2019/10/16/hello-world/</url>
+    <content><![CDATA[<p>欢迎来到这~ 玩的开心~</p>
+]]></content>
+  </entry>
+</search>
