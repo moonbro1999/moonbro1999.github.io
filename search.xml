@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>文章3</title>
-    <url>/2019/10/16/%E6%96%87%E7%AB%A03/</url>
-    <content><![CDATA[<p><img src="/moonbro1999/moonbro1999.github.io/timg.jpg" alt="图例"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>文章2</title>
+    <title>C语言中所有百分号后加上字母</title>
     <url>/2019/10/16/%E6%96%87%E7%AB%A02/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>%后加字母是格式控制符，格式控制符包括格式说明和格式字符。格式说明由“％”和格式字符组成,如％d％f等.<br>它的作用是将输出或输入的数据转换为指定的格式输出或输入.格式说明总是由“％”字符开始的.不同类型的数据用不同的格式字符.<br>格式字符有d,o,x,u,c,s,f,e,g等.<br>如：<br>％d整型输出（int 类型）,％ld长整型输出,（long 类型）<br>％o以八进制数形式输出整数,<br>％x以十六进制数形式输出整数,<br>％u以十进制数输出unsigned型数据(无符号数–都为正数).<br>％c用来输出一个字符,<br>％s用来输出一个字符串,<br>％f用来输出实数,以小数形式输出,(float类型)<br>%lf用来输出实数,以小数形式输出,(double类型)<br>％e以指数形式输出实数,<br>％g根据大小自动选f格式或e格式,且不输出无意义的零.<br>int、long 表示整数<br>float、double表示浮点数，数学里的小数</p>
+]]></content>
+      <categories>
+        <category>-c</category>
+      </categories>
+      <tags>
+        <tag>-c</tag>
+      </tags>
   </entry>
   <entry>
     <title>C语言运算符中箭头的含义</title>
@@ -19,7 +20,7 @@
 <p>指向结构体成员运算符需要用到结构体关键字struct和C++类关键字class。结构体指针和对象指针定义的形式如下：</p>
 <p>1、struct 结构体类型名 *指针名；</p>
 <p>2、struct 结构体类型名 *指针名 = &amp;一个结构体的名字。</p>
-<p><img src="/moonbro1999/moonbro1999.github.io/%E7%AE%AD%E5%A4%B4.png" alt="图例"></p>
+<p><img src="/images/%E7%AE%AD%E5%A4%B4.png" alt="图例"></p>
 <p>扩展资料：<br>C语言中访问结构体成员时 点 . 和 箭头 -&gt; 的区别</p>
 <p>点（.）是用于结构体变量访问成员，箭头（-&gt;）是用于结构体指针访问成员。</p>
 <p>相同点：两个都是二元操作符，其右操作符是成员的名称。</p>
