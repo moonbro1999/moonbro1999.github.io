@@ -294,6 +294,201 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/moonbro1999/moonbro1999.github.io.git/2020/04/13/gets-，scanf/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="月哥">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="杂乱无章">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/04/13/gets-，scanf/" itemprop="url">gets()，scanf()的区别</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-13T14:55:24+08:00">
+                2020-04-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/c/" itemprop="url" rel="index">
+                    <span itemprop="name">-c</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/04/13/gets-，scanf/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="https://github.com/moonbro1999/moonbro1999.github.io.git/2020/04/13/gets-，scanf/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>C语言 gets（）和scanf（）函数的区别<br>scanf( )函数和gets( )函数都可用于输入字符串，但在功能上有区别。若想从键盘上输入字符串”hi hello”，则应该使用<strong>gets</strong>函数。</p>
+<p>gets可以接收空格；而scanf遇到空格、回车和Tab键都会认为输入结束，所有它不能接收空格。</p>
+<p>char string[15]; gets(string); /<em>遇到回车认为输入结束</em>/</p>
+<p>scanf(“%s”,string); /<em>遇到空格认为输入结束</em>/</p>
+<p>所以在输入的字符串中包含空格时，应该使用gets输入。</p>
+<p>scanf和gets获取字符串时的区别</p>
+<p>在C语言中，能构获取字符串的函数至少有两个：</p>
+<p>1.scanf()</p>
+<p>所在头文件：stdio.h</p>
+<p>语法：scanf(“格式控制字符串”,变量地址列表);</p>
+<p>接受字符串时：scanf(“%s”,字符数组名或指针);</p>
+<p>2.gets()</p>
+<p>所在头文件：stdio.h</p>
+<p>语法：gets(字符数组名或指针);</p>
+<p>两者在接受字符串时：</p>
+<p>1.不同点：</p>
+<p>scanf不能接受空格、制表符Tab、回车等；</p>
+<p>而gets能够接受空格、制表符Tab和回车等；</p>
+<p>2.相同点：</p>
+<p>字符串接受结束后自动加’\0’。</p>
+<p>例1：</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>main()</p>
+<p>{</p>
+<p>char ch1[10],ch2[10];</p>
+<p>scanf(“%s”,ch1);</p>
+<p>gets(ch2);</p>
+<p>}</p>
+<p>依次键入asd空格fg回车，asd空格fg回车，则ch1=”asd\0”，ch2=”asd fg\0”。</p>
+<p>例2：</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>main()</p>
+<p>{</p>
+<p>char ch1[10],ch2[10],c1,c2;</p>
+<p>scanf(“%s”,ch1);</p>
+<p>c1=getchar();</p>
+<p>gets(ch2);</p>
+<p>c2=getchar();</p>
+<p>}</p>
+<p>依次键入asdfg回车，asdfg回车，则ch1=”asdfg\0”，c1=’\n’，ch2=”asdfg\0”，c2需输入。</p>
+<p>scanf ：当遇到回车，空格和tab键会自动在字符串后面添加’\0’，但是回车，空格和tab键仍会留在输入的缓冲区中。</p>
+<p>gets：可接受回车键之前输入的所有字符，并用’\n’替代 ‘\0’.回车键不会留在输入缓冲区中</p>
+<p>gets()用到读取字符串，用回车结束输入</p>
+<p>scanf()可以读取所有类型的变量</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://github.com/moonbro1999/moonbro1999.github.io.git/2019/10/16/文章2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -397,7 +592,7 @@
       
         
           
-            <p>%后加字母是格式控制符，格式控制符包括格式说明和格式字符。格式说明由“％”和格式字符组成,如％d％f等.<br>它的作用是将输出或输入的数据转换为指定的格式输出或输入.格式说明总是由“％”字符开始的.不同类型的数据用不同的格式字符.<br>格式字符有d,o,x,u,c,s,f,e,g等.<br>如：<br>％d整型输出（int 类型）,％ld长整型输出,（long 类型）<br>％o以八进制数形式输出整数,<br>％x以十六进制数形式输出整数,<br>％u以十进制数输出unsigned型数据(无符号数–都为正数).<br>％c用来输出一个字符,<br>％s用来输出一个字符串,<br>％f用来输出实数,以小数形式输出,(float类型)<br>%lf用来输出实数,以小数形式输出,(double类型)<br>％e以指数形式输出实数,<br>％g根据大小自动选f格式或e格式,且不输出无意义的零.<br>int、long 表示整数<br>float、double表示浮点数，数学里的小数</p>
+            <p>%后加字母是格式控制符，格式控制符包括格式说明和格式字符。格式说明由“％”和格式字符组成,如％d％f等.<br>它的作用是将输出或输入的数据转换为指定的格式输出或输入.格式说明总是由“％”字符开始的.不同类型的数据用不同的格式字符.<br>格式字符有d,o,x,u,c,s,f,e,g等.<br>如：<br>％d整型输出（int 类型）,％ld长整型输出,（long 类型）<br>％o以八进制数形式输出整数,<br>％x以十六进制数形式输出整数,<br>％u以十进制数输出unsigned型数据(无符号数–都为正数).<br>％c用来输出一个字符,<br>％s用来输出一个字符串,<br>％f用来输出实数,以小数形式输出,(float类型)<br>%lf用来输出实数,以小数形式输出,(double类型)<br>％e以指数形式输出实数,<br>％g根据大小自动选f格式或e格式,且不输出无意义的零.<br>int、long 表示整数<br>float、double表示浮点数，数学里的小数<br>格式控制符“%p”中的p是pointer（指针）的缩写。指针的值是语言实现（编译程序）相关的，但几乎所有实现中，指针的值都是一个表示地址空间中某个存储器单元的整数。printf函数族中对于%p一般以十六进制整数方式输出指针的值，附加前缀0x。<br>%p是打印地址的, %x是以十六进制形式打印, 完全不同！另外在64位下结果会不一样, 所以打印指针老老实实用%p .</p>
 
           
         
@@ -770,7 +965,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -836,7 +1031,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
