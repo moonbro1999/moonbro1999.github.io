@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>最大子列和问题</title>
+    <url>/2020/04/17/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%88%97%E5%92%8C%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>gets()，scanf()的区别</title>
     <url>/2020/04/13/gets%C2%80-%EF%BC%8Cscanf/</url>
     <content><![CDATA[<p>C语言 gets（）和scanf（）函数的区别<br>scanf( )函数和gets( )函数都可用于输入字符串，但在功能上有区别。若想从键盘上输入字符串”hi hello”，则应该使用<strong>gets</strong>函数。</p>
